@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="utf-8" />
+      <title>Learning Vue 03</title>
+</head>
+
+<body>
+      <div id="app">
+            <button type="submit" @click="count++">
+                  Increment Counter: {{count}}
+            </button>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script>
+            new Vue({
+                  el: '#app',
+                  data: {
+                        count: 0
+                  },
+                  methods: {
+                        updateCount: function () {
+                              this.count++
+                        }
+                  }
+            })
+      </script>
+</body>
+
+</html>
